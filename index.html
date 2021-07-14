@@ -6,12 +6,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>task</title>
 </head>
+<style>
+    body{
+        background-image: url(https://www.globalsuzuki.com/motorcycle/products/hayabusa/img/introduction_02.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+    }
+    .container{
+        margin:10px auto;
+    }
+    button{
+        color:royalblue;
+        padding:10px;
+        border:2px solid red;
+        background-color: darkgray;
+        margin:40px;
+    }
+    button:focus{
+        color:darkblue;
+        font-size: 20px;
+    }
+    input:focus{
+        background-color: crimson;
+        padding: 15px;
+        font-weight: bolder;
+    }
+    input{
+        background-color: transparent;
+        
+    }
+    .task{
+        margin-top: 50px;
+    }
+    #show {
+        border:2px solid red;
+        padding: 10px;
+        background-color: darkgray;
+    }
+    h1 {
+    margin-top: 2px;
+    color: darkgrey;
+    font-family: cursive;
+    font-size: 51px;
+    border-bottom: 2px solid indianred;
+    border-width: 5px;
+    width: 256px;
+}
+</style>
 <body>
-    <div>
-        <button onclick="add()">+</button>
-        <span id="dis">0</span>
-        <button onclick="sub()">-</button>
-        <input type="text" id="inp">
+    <div class="container">
+        <center>
+            <div class="task">
+                <button onclick="add()">+</button>
+                <span id="show">0</span>
+                <button onclick="sub()">-</button>
+                <input type="text" id="wrk">
+            </div>
+            <h1>Counter</h1>
+        </center>
     </div>
     <script src="app.js"></script>
 </body>
